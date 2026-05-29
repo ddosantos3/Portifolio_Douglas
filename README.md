@@ -56,6 +56,8 @@ http://localhost:4173
 
 O formulário flutuante usa Netlify Forms. Após o deploy, confira no painel do Netlify se o formulário `portfolio-contact` foi detectado.
 
+Envios feitos em `localhost` ou abrindo o `index.html` diretamente não disparam e-mail; o recebimento real depende do deploy processado pela Netlify.
+
 Para receber os contatos por e-mail:
 
 1. Acesse o projeto no Netlify.

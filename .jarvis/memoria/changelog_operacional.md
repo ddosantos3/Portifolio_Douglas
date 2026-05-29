@@ -59,4 +59,5 @@
 - Substituido envio via `mailto:` por envio AJAX para Netlify Forms.
 - Formulario `portfolio-contact` agora possui `data-netlify="true"`, `form-name`, assunto e honeypot.
 - Adicionado feedback visual de envio, sucesso e erro.
+- Adicionada protecao para evitar falso sucesso em testes locais fora da Netlify.
 - README documenta configuracao de notificacao no Netlify para `ddosantosmkt@gmail.com`.

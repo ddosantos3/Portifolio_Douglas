@@ -416,8 +416,14 @@
 
     form.addEventListener("submit", async (event) => {
       event.preventDefault();
+      const isLocalPreview = window.location.protocol === "file:" || ["localhost", "127.0.0.1"].includes(window.location.hostname);
       const formData = new FormData(form);
       const submitButton = form.querySelector("button[type='submit']");
+
+      if (isLocalPreview) {
+        setStatus("Teste local não envia e-mail. Publique ou teste pelo deploy da Netlify.", "error");
+        return;
+      }
 
       submitButton?.classList.add("is-loading");
       submitButton?.setAttribute("disabled", "true");
