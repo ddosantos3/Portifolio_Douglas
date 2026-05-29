@@ -43,3 +43,9 @@
 - Popover agora abre acima do icone `DS`, ancorado no canto inferior direito.
 - Removido bloqueio de scroll da pagina ao abrir o formulario.
 - Adicionado fechamento ao clicar fora do popover.
+
+## 2026-05-29 - Alinhamento de cards
+- Ajustadas grades de competencias e projetos para alinhamento consistente entre colunas e linhas.
+- Cards agora usam `grid-auto-rows`, altura consistente e `align-items: stretch`.
+- Conteudo interno dos cards passou a usar flex column para manter tags e rodapes alinhados.
+- Animacao GSAP dos cards foi alterada para ocorrer por grupo com stagger, evitando offsets independentes entre cards da mesma linha.

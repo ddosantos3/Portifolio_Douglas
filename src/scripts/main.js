@@ -283,8 +283,30 @@
         delay: 0.15
       });
 
-      window.gsap.utils.toArray("[data-animate], .anim-item").forEach((element) => {
+      window.gsap.utils.toArray("[data-animate]").forEach((element) => {
         if (element.matches("[data-animate='hero-copy'], [data-animate='hero-visual']")) return;
+
+        if (element.dataset.animate === "cards") {
+          const cards = Array.from(element.children).filter((child) => child.classList.contains("anim-item"));
+          window.gsap.set(element, { opacity: 1, y: 0 });
+          window.gsap.fromTo(cards, {
+            opacity: 0,
+            y: 22
+          }, {
+            opacity: 1,
+            y: 0,
+            duration: 0.68,
+            ease: "power3.out",
+            stagger: 0.07,
+            scrollTrigger: {
+              trigger: element,
+              start: "top 84%",
+              once: true
+            }
+          });
+          return;
+        }
+
         window.gsap.fromTo(element, {
           opacity: 0,
           y: 26
