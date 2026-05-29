@@ -1,41 +1,93 @@
-# 🎨 Portfólio Douglas
+# Portfólio Douglas Santos
 
-Bem-vindo ao meu portfólio profissional! Este repositório contém o fonte completo do meu website de portfólio web.
+Portfólio profissional estático de Douglas Santos, com posicionamento em sistemas corporativos, SQL, automação, dados e IA aplicada. A interface foi organizada para comunicar experiência real, projetos próprios e evolução técnica de forma moderna, objetiva e recrutável.
 
-## 📋 Sobre
+## Estrutura
 
-Repositório contendo a fonte do meu Portfólio Web, um projeto showcasing minhas habilidades e projetos anteriores como desenvolvedor.
-
-## 📁 Estrutura do Projeto
-
+```text
+Portifolio_Douglas/
+├── assets/
+│   ├── images/
+│   │   └── Douglas.png
+│   ├── docs/
+│   │   └── Curriculo_Douglas_Santos.pdf
+│   └── icons/
+│
+├── src/
+│   ├── styles/
+│   │   └── style.css
+│   ├── scripts/
+│   │   └── main.js
+│   └── data/
+│       └── portfolio-data.js
+│
+├── index.html
+├── README.md
+├── AGENTS.md
+└── .jarvis/
 ```
-├── index.html       # Arquivo HTML principal
-├── style.css        # Estilos CSS
-└── README.md        # Este arquivo
-```
 
-## 🛠️ Tecnologias Utilizadas
+## Como rodar localmente
 
-- **HTML5** - Estrutura semântica
-- **CSS3** - Estilização e responsividade
+O site é estático e pode ser aberto diretamente pelo `index.html`.
 
-## 🚀 Como Usar
+Para servir via HTTP local:
 
-1. Clone o repositório:
 ```bash
-git clone https://github.com/ddosantos3/Portifolio_Douglas.git
+python3 -m http.server 4173
 ```
 
-2. Abra o arquivo `index.html` em seu navegador
+Depois acesse:
 
-## 📱 Visualização
+```text
+http://localhost:4173
+```
 
-Você pode visualizar o portfólio abrindo o arquivo `index.html` diretamente no seu navegador web.
+## Onde editar
 
-## 📧 Contato
+- Conteúdo de projetos, competências, certificações, experiência, stack e cards: `src/data/portfolio-data.js`
+- Estilos e responsividade: `src/styles/style.css`
+- Animações, renderização dos dados, menu, smooth scroll e interações: `src/scripts/main.js`
+- Metadados SEO, estrutura semântica e seções principais: `index.html`
+- Foto principal: `assets/images/Douglas.png`
+- Currículo em PDF: `assets/docs/Curriculo_Douglas_Santos.pdf`
 
-Para mais informações, entre em contato comigo através do GitHub.
+## Tecnologias usadas
 
----
+- HTML5 semântico
+- CSS3 com darkmorphism, glassmorphism, grid técnico e motion sutil
+- JavaScript modular em arquivo separado
+- GSAP + ScrollTrigger via CDN, com fallback por IntersectionObserver
+- Lenis via CDN para smooth scroll, com fallback nativo
+- Lucide Icons via CDN
+- Google Fonts: Sora, Inter e JetBrains Mono
 
-**Douglas Santos** © 2026
+## Conteúdo principal
+
+- Hero premium com foto, status e cards técnicos flutuantes.
+- Sobre com foco em sistemas, dados, automação e IA aplicada.
+- Competências principais em cards modernos.
+- Projetos em destaque:
+  - J.A.R.V.I.S — Ecossistema de Agentes e Skills
+  - Validador Fiscal integrado à Tecnospeed
+  - Agente RAG para Suporte Corporativo
+  - MacroFlow
+  - Automação Discord + Supabase
+- Experiência profissional em timeline.
+- Certificações e formação complementar.
+- Stack e ferramentas por domínio.
+- Como trabalho.
+- Contato com e-mail, telefone, LinkedIn, GitHub e currículo.
+
+## Links
+
+- Portfólio: https://douglassantosportifolio.netlify.app/
+- GitHub: https://github.com/ddosantos3
+- LinkedIn: https://www.linkedin.com/in/douglas-santos-8399263ab
+- E-mail: mailto:ddosantosmkt@gmail.com
+
+## Próximos passos
+
+- Publicar a nova estrutura no GitHub/Netlify.
+- Vincular repositórios públicos quando os projetos Validador Fiscal Tecnospeed, Agente RAG e Automação Discord + Supabase estiverem organizados.
+- Revisar visualmente no navegador após deploy para conferir renderização de fontes, CDN e imagem social.

@@ -1,443 +1,379 @@
 <!doctype html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="description" content="Douglas de Oliveira Santos — Suporte Técnico Pleno/Sênior com foco em Engenharia de Soluções, SQL Server, Integrações Fiscais, Backend, RAG e Automação." />
-  <title>Douglas de Oliveira Santos | Portfólio</title>
+  <meta name="description" content="Portfólio profissional de Douglas Santos, Analista Técnico de Sistemas com experiência em SQL, automação, análise de sistemas, agentes inteligentes, RAG e IA aplicada a soluções corporativas." />
+  <meta name="keywords" content="Douglas Santos, Analista Técnico de Sistemas, SQL Server, Python, Automação, IA Aplicada, RAG, LangChain, LangGraph, Sistemas Corporativos, Agentes Inteligentes, Backend, Dados" />
+  <meta name="author" content="Douglas Santos" />
+  <meta name="theme-color" content="#030712" />
+  <meta property="og:type" content="website" />
+  <meta property="og:locale" content="pt_BR" />
+  <meta property="og:url" content="https://douglassantosportifolio.netlify.app/" />
+  <meta property="og:title" content="Douglas Santos | Sistemas, SQL, Automação e IA Aplicada" />
+  <meta property="og:description" content="Profissional técnico com atuação em sistemas, dados, automação e IA aplicada." />
+  <meta property="og:image" content="https://douglassantosportifolio.netlify.app/assets/images/Douglas.png" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Douglas Santos | Sistemas, SQL, Automação e IA Aplicada" />
+  <meta name="twitter:description" content="Profissional técnico com atuação em sistemas, dados, automação e IA aplicada." />
+  <meta name="twitter:image" content="https://douglassantosportifolio.netlify.app/assets/images/Douglas.png" />
+  <link rel="canonical" href="https://douglassantosportifolio.netlify.app/" />
+  <title>Douglas Santos | Sistemas, SQL, Automação e IA Aplicada</title>
 
-  <!-- Mantém o estilo e tipografia definidos no seu style.css -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Outfit:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@500;600;700&family=Sora:wght@500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="src/styles/style.css" />
 
-  <link rel="stylesheet" href="style.css" />
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Douglas Santos",
+      "jobTitle": "Analista Técnico de Sistemas",
+      "email": "mailto:ddosantosmkt@gmail.com",
+      "telephone": "+55 14 99692-5590",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Marília",
+        "addressRegion": "SP",
+        "addressCountry": "BR"
+      },
+      "url": "https://douglassantosportifolio.netlify.app/",
+      "sameAs": [
+        "https://github.com/ddosantos3",
+        "https://www.linkedin.com/in/douglas-santos-8399263ab"
+      ],
+      "knowsAbout": [
+        "SQL Server",
+        "Python",
+        "Automação",
+        "IA Aplicada",
+        "RAG",
+        "LangChain",
+        "LangGraph",
+        "Sistemas Corporativos"
+      ]
+    }
+  </script>
 </head>
 
 <body>
   <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
+  <div class="scroll-progress" data-scroll-progress aria-hidden="true"></div>
 
-  <main id="conteudo" class="page">
-    <!-- HERO -->
-    <section class="hero" id="boas-vindas">
-      <div class="hero-intro" data-reveal>
-        <div class="profile profile--xl">
-          <img src="Screenshot_1.png" alt="Foto de Douglas de Oliveira Santos"
-               onerror="this.src='https://github.com/ddosantos3.png'"/>
-        </div>
+  <div class="background-layers" aria-hidden="true">
+    <div class="tech-grid"></div>
+    <div class="data-lines"></div>
+    <div class="noise-overlay"></div>
+  </div>
 
-        <h1>Douglas Santos</h1>
-        <p class="role">Suporte Técnico Pleno/Sênior • Engenharia de Soluções</p>
+  <header class="site-header" data-header>
+    <a class="brand" href="#inicio" aria-label="Ir para o início">
+      <span class="brand-mark">DS</span>
+      <span class="brand-copy">Douglas Santos</span>
+    </a>
 
-        <p class="hero-sub">
-          Atuação em <strong>incidentes críticos</strong>, <strong>SQL Server</strong>, <strong>integrações REST</strong> e <strong>fiscal (NF-e/NFS-e)</strong>.
-          Perfil híbrido com base em <strong>Backend</strong>, <strong>Dados</strong> e <strong>IA aplicada (RAG)</strong>, focado em confiabilidade, escala e melhoria contínua.
-        </p>
+    <button class="nav-toggle" type="button" data-nav-toggle aria-controls="menu-principal" aria-expanded="false" aria-label="Abrir menu">
+      <i data-lucide="menu" aria-hidden="true"></i>
+    </button>
 
-        <div class="hero-cta">
-          <a class="btn solid" href="#contato">Fale comigo</a>
-          <a class="btn outline" href="Douglas_de_Oliveira_Santos_CV_Executivo_Classico.pdf" download>Baixar CV</a>
-          <a class="btn outline" href="https://www.linkedin.com/in/douglas-santos-8399263ab/" target="_blank" rel="noreferrer">LinkedIn</a>
-          <a class="btn outline" href="https://github.com/ddosantos3" target="_blank" rel="noreferrer">GitHub</a>
-        </div>
-      </div>
+    <nav class="site-nav" id="menu-principal" data-nav aria-label="Navegação principal">
+      <a href="#sobre">Sobre</a>
+      <a href="#competencias">Competências</a>
+      <a href="#projetos">Projetos</a>
+      <a href="#experiencia">Experiência</a>
+      <a href="#contato">Contato</a>
+    </nav>
+  </header>
 
-      <!-- SLIDER -->
-      <div class="slider glass mt-section" data-slider data-reveal tabindex="0" aria-label="Seções do portfólio">
-        <button class="slider-arrow prev" type="button" data-prev aria-label="Slide anterior">&#8249;</button>
-        <button class="slider-arrow next" type="button" data-next aria-label="Próximo slide">&#8250;</button>
-
-        <div class="slider-track">
-
-          <!-- QUEM SOU -->
-          <article class="slide is-active" data-slide data-title="Quem sou">
-            <div class="slide-header">
-              <h2>QUEM SOU</h2>
-
-              <div class="social" aria-label="Links sociais">
-                <a class="social-link" href="mailto:ddosantosmtk@gmail.com" aria-label="E-mail" title="E-mail">
-                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                       stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                    <rect width="20" height="16" x="2" y="4" rx="2"></rect>
-                    <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path>
-                  </svg>
-                </a>
-
-                <a class="social-link" href="https://www.linkedin.com/in/douglas-santos-8399263ab/" target="_blank" rel="noreferrer"
-                   aria-label="LinkedIn" title="LinkedIn">
-                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                       stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                    <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
-                    <rect width="4" height="12" x="2" y="9"></rect>
-                    <circle cx="4" cy="4" r="2"></circle>
-                  </svg>
-                </a>
-
-                <a class="social-link" href="https://github.com/ddosantos3" target="_blank" rel="noreferrer"
-                   aria-label="GitHub" title="GitHub">
-                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                       stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                    <path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"></path>
-                    <path d="M9 18c-4.51 2-5-2-7-2"></path>
-                  </svg>
-                </a>
-              </div>
-            </div>
-
-            <div class="columns two mt-content">
-              <p>
-                Suporte Técnico <strong>Pleno</strong> (6+ anos) com atuação em triagem e resolução de chamados de alta criticidade,
-                análise aprofundada em <strong>SQL Server</strong>, correções via scripts/updates e condução técnica de incidentes complexos.
-              </p>
-
-              <p>
-                Forte domínio <strong>técnico-fiscal</strong> para emissão e padronização de <strong>NF-e/NFS-e</strong>, integrações e validações
-                (APIs, payloads, XML). Perfil híbrido com base em <strong>Backend</strong>, <strong>Dados</strong> e <strong>IA aplicada (RAG)</strong>.
-              </p>
-            </div>
-
-            <div class="metrics mt-content">
-              <div class="metric-card">
-                <p class="metric-title">Foco</p>
-                <p class="metric-value">Resolução Crítica</p>
-                <p class="metric-sub">Diagnóstico • SQL • Estabilidade</p>
-              </div>
-
-              <div class="metric-card">
-                <p class="metric-title">Especialidade</p>
-                <p class="metric-value">Fiscal & Integrações</p>
-                <p class="metric-sub">NF-e/NFS-e • APIs • Regras</p>
-              </div>
-
-              <div class="metric-card">
-                <p class="metric-title">Direção</p>
-                <p class="metric-value">Backend & IA</p>
-                <p class="metric-sub">RAG • Automação • Dados</p>
-              </div>
-            </div>
-          </article>
-
-          <!-- HABILIDADES -->
-          <article class="slide" data-slide data-title="Habilidades">
-            <div class="slide-header">
-              <h2>HABILIDADES</h2>
-              <a class="btn outline" href="#habilidades">Ver stack</a>
-            </div>
-
-            <div class="columns three mt-content">
-              <div class="entry">
-                <h3>SQL Server</h3>
-                <p class="entry-meta">Análise • Correção • Integridade</p>
-                <p>Consultas avançadas, scripts críticos, correções controladas e investigação de causa raiz.</p>
-              </div>
-
-              <div class="entry">
-                <h3>Integrações (REST/API)</h3>
-                <p class="entry-meta">Validação • Postman • Payload</p>
-                <p>Troubleshooting de integrações, leitura de logs, validação de payloads e análise de XML.</p>
-              </div>
-
-              <div class="entry">
-                <h3>IA Aplicada (RAG)</h3>
-                <p class="entry-meta">Base vetorial • Automação</p>
-                <p>Construção e uso de agentes para suporte, com consulta em base técnica e redução de repetição.</p>
-              </div>
-            </div>
-          </article>
-
-          <!-- PROJETOS -->
-          <article class="slide" data-slide data-title="Projetos">
-            <div class="slide-header">
-              <h2>PROJETOS</h2>
-              <a class="btn outline" href="https://github.com/ddosantos3" target="_blank" rel="noreferrer">GitHub</a>
-            </div>
-
-            <div class="columns three mt-content">
-              <div class="entry">
-                <h3>Implantação NFS-e</h3>
-                <p class="entry-meta">Portal Nacional</p>
-                <p>Estruturação do processo de emissão, validações técnicas e adequações para operação em produção.</p>
-              </div>
-
-              <div class="entry">
-                <h3>Reforma Tributária 2026</h3>
-                <p class="entry-meta">Adequações fiscais</p>
-                <p>Mapeamento e implementação de ajustes sistêmicos para atender novas regras tributárias.</p>
-              </div>
-
-              <div class="entry">
-                <h3>Módulo Fiscal</h3>
-                <p class="entry-meta">Implantação & Treinamento</p>
-                <p>Condução de clientes, cadastro de impostos e parametrizações conforme regime tributário.</p>
-              </div>
-
-              <div class="entry">
-                <h3>Qualidade no Atendimento</h3>
-                <p class="entry-meta">Indicadores & Processo</p>
-                <p>Implantação de rotinas de qualidade visando melhoria de indicadores e redução de retrabalho.</p>
-              </div>
-
-              <div class="entry">
-                <h3>Agente RAG (Suporte)</h3>
-                <p class="entry-meta">RAG • Vetores • Automação</p>
-                <p>Agente para consulta inteligente em base técnica, acelerando respostas e padronizando orientação.</p>
-              </div>
-            </div>
-          </article>
-
-          <!-- EXPERIÊNCIA -->
-          <article class="slide" data-slide data-title="Experiência">
-            <div class="slide-header">
-              <h2>EXPERIÊNCIA</h2>
-              <a class="btn outline" href="Douglas_de_Oliveira_Santos_CV_Executivo_Classico.pdf" download>Baixar CV</a>
-            </div>
-
-            <div class="columns two mt-content">
-              <div class="entry">
-                <h3>eFinance Consultoria e Sistemas</h3>
-                <p class="entry-meta">Suporte Técnico Pleno | 05/2019 – Atual</p>
-                <p>
-                  • Triagem e resolução de chamados técnicos de alta criticidade.<br>
-                  • Análises estruturais em <strong>SQL Server</strong> e correções via scripts/updates controlados.<br>
-                  • Troubleshooting de integrações via <strong>APIs</strong> (Postman), validação de payloads e XML.<br>
-                  • Atuação técnico-fiscal: <strong>NF-e/NFS-e</strong>, regras tributárias e padronização de emissores.<br>
-                  • Condução técnica de tarefas/projetos e apoio operacional em ausências gerenciais.<br>
-                  • Automação de rotinas e aplicação de <strong>IA (RAG)</strong> para ganho de eficiência no suporte.
-                </p>
-              </div>
-
-              <div class="entry">
-                <h3>Paschoalotto</h3>
-                <p class="entry-meta">Analista de Qualidade Nível II | 05/2014 – 04/2019</p>
-                <p>
-                  • Análise de qualidade operacional e acompanhamento de indicadores.<br>
-                  • Mapeamento e melhoria contínua de processos.<br>
-                  • Documentação de padrões e apoio na evolução de rotinas internas.<br>
-                  • Atuação em ambiente de alta performance e foco em consistência de entrega.
-                </p>
-              </div>
-            </div>
-          </article>
-
-        </div>
-
-        <div class="slider-dots" aria-label="Paginação dos slides"></div>
-      </div>
-    </section>
-
-    <!-- STACK -->
-    <section class="skills glass mt-section" id="habilidades" data-reveal>
-      <div class="section-title">
-        <h2>Stack Tecnológico</h2>
-        <p class="text-muted">Ferramentas e conhecimentos aplicados no dia a dia de incidentes, integrações e automação.</p>
-      </div>
-
-      <div class="skills-grid mt-content">
-        <div class="skill-card">
-          <p class="skill-name">SQL Server</p>
-          <div class="skill-bar"><div class="skill-fill" style="width: 90%;"></div></div>
-          <p class="skill-level">Avançado</p>
-        </div>
-
-        <div class="skill-card">
-          <p class="skill-name">Integrações REST / APIs</p>
-          <div class="skill-bar"><div class="skill-fill" style="width: 85%;"></div></div>
-          <p class="skill-level">Avançado</p>
-        </div>
-
-        <div class="skill-card">
-          <p class="skill-name">Técnico-Fiscal (NF-e / NFS-e)</p>
-          <div class="skill-bar"><div class="skill-fill" style="width: 85%;"></div></div>
-          <p class="skill-level">Avançado</p>
-        </div>
-
-        <div class="skill-card">
-          <p class="skill-name">Python</p>
-          <div class="skill-bar"><div class="skill-fill" style="width: 70%;"></div></div>
-          <p class="skill-level">Intermediário</p>
-        </div>
-
-        <div class="skill-card">
-          <p class="skill-name">Postgres / Supabase</p>
-          <div class="skill-bar"><div class="skill-fill" style="width: 65%;"></div></div>
-          <p class="skill-level">Intermediário</p>
-        </div>
-
-        <div class="skill-card">
-          <p class="skill-name">RAG / Banco Vetorial</p>
-          <div class="skill-bar"><div class="skill-fill" style="width: 65%;"></div></div>
-          <p class="skill-level">Aplicado</p>
-        </div>
-
-        <div class="skill-card">
-          <p class="skill-name">Automação (n8n)</p>
-          <div class="skill-bar"><div class="skill-fill" style="width: 70%;"></div></div>
-          <p class="skill-level">Intermediário</p>
-        </div>
-
-        <div class="skill-card">
-          <p class="skill-name">HTML / CSS / JavaScript</p>
-          <div class="skill-bar"><div class="skill-fill" style="width: 60%;"></div></div>
-          <p class="skill-level">Base sólida</p>
-        </div>
-      </div>
-    </section>
-
-    <!-- CONTATO -->
-    <section class="contact mt-section" id="contato" data-reveal>
-      <div class="contact-grid">
-
-        <div class="contact-info glass">
-          <h2>Contato</h2>
-          <p class="text-muted mt-content">
-            Descreva seu cenário (dados, integrações, automação ou IA). Eu retorno com diagnóstico, próximos passos e clareza técnica.
+  <main id="conteudo">
+    <section class="section hero" id="inicio" aria-labelledby="hero-title">
+      <div class="section-shell hero-grid">
+        <div class="hero-copy" data-animate="hero-copy">
+          <p class="section-label">Sistemas • Dados • Automação • IA Aplicada</p>
+          <h1 id="hero-title">Douglas Santos</h1>
+          <p class="hero-headline">Analista Técnico de Sistemas | SQL, Automação e IA Aplicada</p>
+          <p class="hero-text">
+            Atuo na análise de sistemas, banco de dados, automação de processos e criação de soluções com IA aplicada. Minha experiência conecta investigação técnica, entendimento de negócio e construção de ferramentas para reduzir retrabalho, estruturar diagnósticos e acelerar entregas.
           </p>
 
-          <div class="info-list mt-content">
-            <a class="info-item-link" href="mailto:ddosantosmtk@gmail.com" aria-label="Enviar e-mail">
-              <div class="info-icon" aria-hidden="true">
-                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                     stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                  <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
-                  <polyline points="22,6 12,13 2,6"></polyline>
-                </svg>
-              </div>
-              <div class="info-text">
-                <p class="info-label">E-mail</p>
-                <p class="info-value">ddosantosmtk@gmail.com</p>
-              </div>
+          <div class="hero-actions" aria-label="Ações principais">
+            <a class="btn btn-primary" href="#projetos">
+              <i data-lucide="sparkles" aria-hidden="true"></i>
+              Ver projetos
             </a>
+            <a class="btn btn-secondary" href="assets/docs/Curriculo_Douglas_Santos.pdf" download>
+              <i data-lucide="download" aria-hidden="true"></i>
+              Baixar currículo
+            </a>
+            <a class="btn btn-ghost" href="https://github.com/ddosantos3" target="_blank" rel="noreferrer">
+              <i data-lucide="github" aria-hidden="true"></i>
+              GitHub
+            </a>
+            <a class="btn btn-ghost" href="https://www.linkedin.com/in/douglas-santos-8399263ab" target="_blank" rel="noreferrer">
+              <i data-lucide="linkedin" aria-hidden="true"></i>
+              LinkedIn
+            </a>
+          </div>
 
-            <a class="info-item-link" href="tel:+5514996925590" aria-label="Ligar para Douglas">
-              <div class="info-icon" aria-hidden="true">
-                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                     stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                  <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6A19.79 19.79 0 0 1 2.08 4.18 2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
-                </svg>
-              </div>
-              <div class="info-text">
-                <p class="info-label">Telefone</p>
-                <p class="info-value">(14) 99692-5590</p>
-              </div>
-            </a>
-
-            <a class="info-item-link" href="Douglas_de_Oliveira_Santos_CV_Executivo_Classico.pdf" download aria-label="Baixar currículo">
-              <div class="info-icon" aria-hidden="true">
-                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                     stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                  <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
-                  <polyline points="7 10 12 15 17 10"></polyline>
-                  <line x1="12" y1="15" x2="12" y2="3"></line>
-                </svg>
-              </div>
-              <div class="info-text">
-                <p class="info-label">Currículo</p>
-                <p class="info-value">Baixar PDF</p>
-              </div>
-            </a>
+          <div class="hero-proof" aria-label="Resumo profissional">
+            <article>
+              <span>Base prática</span>
+              Sistemas corporativos
+            </article>
+            <article>
+              <span>Foco técnico</span>
+              SQL, dados e diagnóstico
+            </article>
+            <article>
+              <span>Direção atual</span>
+              Automação e IA aplicada
+            </article>
           </div>
         </div>
 
-        <div class="contact-form-wrapper glass">
-          <h2>Mensagem</h2>
-          <p class="text-muted mt-content">Descreva seu desafio técnico (dados, integrações, automação ou IA).</p>
-
-          <form class="contact-form mt-content" action="#" method="post">
-            <div class="input-group">
-              <label for="nome">Nome</label>
-              <input id="nome" name="nome" type="text" placeholder="Seu nome" required />
+        <div class="hero-visual" data-animate="hero-visual">
+          <div class="portrait-frame tilt-card" data-tilt>
+            <div class="status-pill">
+              <span aria-hidden="true"></span>
+              Disponível para oportunidades
             </div>
+            <img src="assets/images/Douglas.png" alt="Foto profissional de Douglas Santos" width="1122" height="1402" decoding="async" />
+          </div>
 
-            <div class="input-group">
-              <label for="email">E-mail</label>
-              <input id="email" name="email" type="email" placeholder="seuemail@dominio.com" required />
-            </div>
+          <div class="floating-card floating-card-a" data-float>
+            <i data-lucide="database" aria-hidden="true"></i>
+            <span>SQL Server</span>
+          </div>
+          <div class="floating-card floating-card-b" data-float>
+            <i data-lucide="workflow" aria-hidden="true"></i>
+            <span>Python</span>
+          </div>
+          <div class="floating-card floating-card-c" data-float>
+            <i data-lucide="brain-circuit" aria-hidden="true"></i>
+            <span>IA Aplicada</span>
+          </div>
+          <div class="floating-card floating-card-d" data-float>
+            <i data-lucide="network" aria-hidden="true"></i>
+            <span>RAG & Agentes</span>
+          </div>
+        </div>
+      </div>
+    </section>
 
-            <div class="input-group">
-              <label for="mensagem">Mensagem</label>
-              <textarea id="mensagem" name="mensagem" rows="6" placeholder="Descreva seu desafio técnico (dados, integrações, automação ou IA)." required></textarea>
-            </div>
-
-            <button class="btn primary-cta w-full" type="submit">Enviar</button>
-            <p class="form-note" aria-live="polite">Mensagem enviada. Obrigado! Vou retornar em breve.</p>
-          </form>
+    <section class="section" id="sobre" aria-labelledby="sobre-title">
+      <div class="section-shell section-grid">
+        <div class="section-heading" data-animate="section-heading">
+          <p class="section-label">Sobre</p>
+          <h2 id="sobre-title">Tecnologia aplicada a problemas reais, com contexto e responsabilidade.</h2>
         </div>
 
+        <div class="section-content" data-animate="content">
+          <div class="about-copy">
+            <p>
+              Sou um profissional de tecnologia com experiência em análise de sistemas, banco de dados, automação de processos e melhoria contínua de soluções digitais. Atuo na investigação de problemas, estruturação de diagnósticos, validação de regras de negócio e apoio à evolução de produtos e sistemas.
+            </p>
+            <p>
+              Tenho direcionado minha carreira para automação e IA aplicada, utilizando Python, SQL, agentes inteligentes, RAG, prompt engineering e desenvolvimento assistido por IA para criar soluções mais eficientes, reduzir retrabalho e transformar demandas complexas em entregas mais claras e escaláveis.
+            </p>
+            <p>
+              Minha base prática vem de ambientes corporativos, onde aprendi a conectar operação, dados, produto e tecnologia para resolver problemas reais.
+            </p>
+          </div>
+
+          <div class="focus-grid" data-render="focusCards" aria-label="Focos profissionais"></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="competencias" aria-labelledby="competencias-title">
+      <div class="section-shell">
+        <div class="section-heading section-heading-wide" data-animate="section-heading">
+          <p class="section-label">Competências principais</p>
+          <h2 id="competencias-title">Tecnologias e práticas que aplico na análise, construção e melhoria de soluções digitais.</h2>
+        </div>
+
+        <div class="card-grid competency-grid" data-render="competencies" data-animate="cards"></div>
+      </div>
+    </section>
+
+    <section class="section section-accent" id="projetos" aria-labelledby="projetos-title">
+      <div class="section-shell">
+        <div class="section-heading section-heading-wide" data-animate="section-heading">
+          <p class="section-label">Projetos em destaque</p>
+          <h2 id="projetos-title">Iniciativas próprias e aplicações técnicas em automação, sistemas, dados e IA aplicada.</h2>
+          <p>
+            Projetos com foco em agentes, RAG, Python, automação e leitura técnica de problemas corporativos. O destaque aqui não é volume, é direção.
+          </p>
+        </div>
+
+        <div class="project-grid" data-render="projects" data-animate="cards"></div>
+      </div>
+    </section>
+
+    <section class="section" id="experiencia" aria-labelledby="experiencia-title">
+      <div class="section-shell section-grid">
+        <div class="section-heading" data-animate="section-heading">
+          <p class="section-label">Experiência profissional</p>
+          <h2 id="experiencia-title">Trajetória técnica em sistemas, dados, operação e produto.</h2>
+        </div>
+
+        <div class="timeline" data-render="experience" data-animate="timeline"></div>
+      </div>
+    </section>
+
+    <section class="section" id="certificacoes" aria-labelledby="certificacoes-title">
+      <div class="section-shell">
+        <div class="section-heading section-heading-wide" data-animate="section-heading">
+          <p class="section-label">Certificações</p>
+          <h2 id="certificacoes-title">Formação complementar direcionada a agentes, IA generativa, dados e desenvolvimento.</h2>
+        </div>
+
+        <div class="card-grid certification-grid" data-render="certifications" data-animate="cards"></div>
+      </div>
+    </section>
+
+    <section class="section" id="stack" aria-labelledby="stack-title">
+      <div class="section-shell section-grid">
+        <div class="section-heading" data-animate="section-heading">
+          <p class="section-label">Stack e ferramentas</p>
+          <h2 id="stack-title">Ferramentas organizadas por domínio e aplicação prática.</h2>
+        </div>
+
+        <div class="stack-panel" data-render="stack" data-animate="cards"></div>
+      </div>
+    </section>
+
+    <section class="section" id="como-trabalho" aria-labelledby="como-trabalho-title">
+      <div class="section-shell section-grid">
+        <div class="section-heading" data-animate="section-heading">
+          <p class="section-label">Como trabalho</p>
+          <h2 id="como-trabalho-title">Diagnóstico antes da solução. Automação com propósito. IA com validação.</h2>
+        </div>
+
+        <div class="section-content" data-animate="content">
+          <div class="about-copy">
+            <p>
+              Trabalho conectando visão analítica, entendimento de negócio e execução técnica. Gosto de compreender o problema antes de propor a solução, organizar evidências, validar caminhos possíveis e transformar ideias em entregas práticas.
+            </p>
+            <p>
+              Utilizo IA generativa como acelerador de produtividade, prototipação e análise, mantendo responsabilidade sobre validação, revisão técnica, documentação e aplicação real da solução.
+            </p>
+          </div>
+
+          <div class="card-grid work-grid" data-render="workstyle"></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section contact-section" id="contato" aria-labelledby="contato-title">
+      <div class="section-shell contact-grid">
+        <div class="contact-copy" data-animate="section-heading">
+          <p class="section-label">Contato</p>
+          <h2 id="contato-title">Vamos conversar sobre sistemas, dados, automação ou IA aplicada?</h2>
+          <p>
+            Se você busca alguém com visão técnica, capacidade analítica e interesse real em automação, dados e IA aplicada, estou aberto a conversar sobre oportunidades e projetos.
+          </p>
+        </div>
+
+        <div class="contact-actions-panel" data-animate="cards">
+          <div class="contact-actions" aria-label="Canais de contato">
+            <a class="btn btn-secondary" href="https://www.linkedin.com/in/douglas-santos-8399263ab" target="_blank" rel="noreferrer">
+              <i data-lucide="linkedin" aria-hidden="true"></i>
+              LinkedIn
+            </a>
+            <a class="btn btn-ghost" href="https://github.com/ddosantos3" target="_blank" rel="noreferrer">
+              <i data-lucide="github" aria-hidden="true"></i>
+              GitHub
+            </a>
+            <a class="btn btn-ghost" href="assets/docs/Curriculo_Douglas_Santos.pdf" download>
+              <i data-lucide="file-down" aria-hidden="true"></i>
+              Baixar currículo
+            </a>
+          </div>
+
+          <div class="contact-methods">
+            <a href="mailto:ddosantosmkt@gmail.com">
+              <span>E-mail</span>
+              ddosantosmkt@gmail.com
+            </a>
+            <a href="tel:+5514996925590">
+              <span>Telefone</span>
+              (14) 99692-5590
+            </a>
+            <p>
+              <span>Local</span>
+              Marília/SP
+            </p>
+          </div>
+        </div>
       </div>
     </section>
   </main>
 
-  <script>
-    // Slider
-    const slider = document.querySelector('[data-slider]');
-    if (slider) {
-      const slides = Array.from(slider.querySelectorAll('[data-slide]'));
-      const prev = slider.querySelector('[data-prev]');
-      const next = slider.querySelector('[data-next]');
-      const dotsWrap = slider.querySelector('.slider-dots');
+  <footer class="site-footer">
+    <div class="section-shell footer-inner">
+      <p>Douglas Santos © 2026</p>
+      <a href="#inicio">Voltar ao topo</a>
+    </div>
+  </footer>
 
-      let index = 0;
-      slider.dataset.enhanced = 'true';
+  <button class="floating-contact" type="button" data-contact-open aria-label="Abrir formulário de contato">
+    <span>DS</span>
+  </button>
 
-      const goTo = (newIndex) => {
-        index = (newIndex + slides.length) % slides.length;
-        slides.forEach((slide, i) => {
-          slide.classList.toggle('is-active', i === index);
-          slide.setAttribute('aria-hidden', i === index ? 'false' : 'true');
-        });
-        const dots = dotsWrap.querySelectorAll('button');
-        dots.forEach((dot, i) => {
-          dot.classList.toggle('is-active', i === index);
-          dot.setAttribute('aria-current', i === index ? 'true' : 'false');
-        });
-      };
+  <div class="contact-modal" data-contact-modal aria-hidden="true">
+    <div class="contact-modal-backdrop" data-contact-close></div>
+    <section class="contact-dialog" role="dialog" aria-modal="true" aria-labelledby="contact-dialog-title">
+      <button class="modal-close" type="button" data-contact-close aria-label="Fechar formulário">
+        <i data-lucide="x" aria-hidden="true"></i>
+      </button>
 
-      // dots
-      slides.forEach((slide, i) => {
-        const dot = document.createElement('button');
-        dot.type = 'button';
-        dot.className = 'dot';
-        dot.textContent = slide.dataset.title;
-        dot.setAttribute('aria-label', `Ir para ${slide.dataset.title}`);
-        dot.addEventListener('click', () => goTo(i));
-        dotsWrap.appendChild(dot);
-      });
+      <div class="modal-heading">
+        <div class="modal-mark">DS</div>
+        <div>
+          <h2 id="contact-dialog-title">Enviar mensagem</h2>
+          <p>Conte sobre a oportunidade e eu retorno por e-mail.</p>
+        </div>
+      </div>
 
-      prev?.addEventListener('click', () => goTo(index - 1));
-      next?.addEventListener('click', () => goTo(index + 1));
+      <form class="lead-form" data-contact-form>
+        <div class="form-row">
+          <label for="lead-name">
+            Nome
+            <input id="lead-name" name="nome" type="text" placeholder="Seu nome" autocomplete="name" required />
+          </label>
 
-      slider.addEventListener('keydown', (e) => {
-        if (e.key === 'ArrowLeft') goTo(index - 1);
-        if (e.key === 'ArrowRight') goTo(index + 1);
-      });
+          <label for="lead-phone">
+            Telefone
+            <input id="lead-phone" name="telefone" type="tel" placeholder="(00) 00000-0000" autocomplete="tel" required />
+          </label>
+        </div>
 
-      goTo(index);
-    }
+        <label for="lead-email">
+          E-mail
+          <input id="lead-email" name="email" type="email" placeholder="voce@empresa.com" autocomplete="email" required />
+        </label>
 
-    // Form (mock)
-    const form = document.querySelector('.contact-form');
-    const note = document.querySelector('.form-note');
-    if (form && note) {
-      form.addEventListener('submit', (event) => {
-        event.preventDefault();
-        note.classList.add('is-visible');
-        form.reset();
-        setTimeout(() => note.classList.remove('is-visible'), 5000);
-      });
-    }
+        <label for="lead-message">
+          Mensagem
+          <textarea id="lead-message" name="mensagem" rows="5" placeholder="Me conte rapidamente sobre a oportunidade ou projeto."></textarea>
+        </label>
 
-    // Reveal Animation
-    const els = document.querySelectorAll('[data-reveal]');
-    const io = new IntersectionObserver((entries) => {
-      entries.forEach((entry) => {
-        if (entry.isIntersecting) {
-          entry.target.classList.add('is-revealed');
-          io.unobserve(entry.target);
-        }
-      });
-    }, { threshold: 0.12 });
+        <button class="btn btn-primary modal-submit" type="submit">
+          <i data-lucide="send" aria-hidden="true"></i>
+          Enviar por e-mail
+        </button>
+      </form>
+    </section>
+  </div>
 
-    els.forEach(el => io.observe(el));
-  </script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js" defer></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js" defer></script>
+  <script src="https://cdn.jsdelivr.net/npm/lenis@1.3.23/dist/lenis.min.js" defer></script>
+  <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js" defer></script>
+  <script src="src/data/portfolio-data.js" defer></script>
+  <script src="src/scripts/main.js" defer></script>
 </body>
 </html>
