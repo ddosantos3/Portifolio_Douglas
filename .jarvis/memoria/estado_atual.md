@@ -41,3 +41,7 @@
 ## 2026-05-29 - Curriculo atualizado novamente
 - PDF `assets/docs/Curriculo_Douglas_Santos.pdf` substituido por nova versao enviada pelo usuario.
 - Caminho publico do download foi mantido para evitar ajuste nos CTAs.
+
+## 2026-05-29 - Certificacoes Alura adicionadas
+- Secao de formacao complementar recebeu tres cursos da Alura em prompt engineering, pensamento computacional e IA generativa.
+- Cards foram adicionados em `src/data/portfolio-data.js`, preservando o layout atual da grade.

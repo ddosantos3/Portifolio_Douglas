@@ -74,3 +74,7 @@
 ## 2026-05-29 - Nova atualizacao do curriculo
 - Substituido novamente o PDF do curriculo em `assets/docs/Curriculo_Douglas_Santos.pdf`.
 - Validado que o arquivo permanece em PDF e que os links de download nao precisaram mudar.
+
+## 2026-05-29 - Inclusao de cursos Alura
+- Adicionados cursos de Engenharia de Prompt, Pensamento Computacional e IA Generativa na secao de certificacoes.
+- Mantida a renderizacao por dados estruturados em `src/data/portfolio-data.js`.

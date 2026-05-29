@@ -196,6 +196,24 @@ window.portfolioData = {
       icon: "message-square-code"
     },
     {
+      title: "Engenharia de Prompt: criando prompts eficazes para IA Generativa",
+      issuer: "Alura",
+      description: "Estruturação de instruções, contexto, restrições e refinamento iterativo para melhorar respostas de modelos generativos.",
+      icon: "sparkles"
+    },
+    {
+      title: "Pensamento computacional: fundamentos da computação e lógica de programação",
+      issuer: "Alura",
+      description: "Base em decomposição de problemas, lógica, abstração, padrões e organização de soluções computacionais.",
+      icon: "binary"
+    },
+    {
+      title: "IA: explorando o potencial da inteligência artificial generativa",
+      issuer: "Alura",
+      description: "Conceitos, aplicações e limites da IA generativa, com foco em uso responsável, produtividade e apoio a soluções digitais.",
+      icon: "brain-circuit"
+    },
+    {
       title: "SQL Server, Python, JavaScript, HTML e CSS",
       issuer: "Udemy",
       description: "Base técnica em banco de dados, programação e web.",
