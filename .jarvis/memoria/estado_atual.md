@@ -22,3 +22,9 @@
 - Dados de projetos, competencias, experiencia, certificacoes, stack e cards movidos para `src/data/portfolio-data.js`.
 - Interface redesenhada com dark premium, glassmorphism, background tecnico, cards com hover 3D, timeline, smooth scroll e animacoes com fallback.
 - Validacao final local aprovada por checagens estruturais, HTTP e `git diff --check`.
+
+## 2026-05-29 - Formulario de contato funcional
+- Formulario flutuante `DS` ajustado para envio via Netlify Forms.
+- Envio visual por `mailto:` removido para evitar falsa expectativa de entrega automatica.
+- O site agora envia submissao URL-encoded para a Netlify, com feedback de sucesso/erro no popover.
+- Recebimento por e-mail depende da notificacao de formulario configurada no painel da Netlify para `ddosantosmkt@gmail.com`.

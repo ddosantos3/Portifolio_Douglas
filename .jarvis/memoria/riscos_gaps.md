@@ -9,4 +9,4 @@
 - Animacoes e icones usam CDNs; o site possui fallback para renderizacao e animacao basica, mas CDN deve ser conferida no deploy final.
 - Conteudos de cards sao renderizados via JavaScript local; se JS for desabilitado, hero e estrutura principal permanecem visiveis, mas listas dinamicas nao aparecem.
 - Validacao de console em navegador real nao foi executada por ausencia de navegador/Node/runtime JS no ambiente local; validacao estatica e HTTP foi concluida.
-- Formulario flutuante usa `mailto:` por ser site estatico sem backend; envio depende do cliente de e-mail do visitante.
+- Formulario flutuante usa Netlify Forms. Para receber e-mail, e necessario manter a deteccao de formularios ativa e configurar notificacao de submissao no painel do Netlify para `ddosantosmkt@gmail.com`.

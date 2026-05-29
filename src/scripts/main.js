@@ -369,12 +369,21 @@
     const openButton = document.querySelector("[data-contact-open]");
     const closeButtons = document.querySelectorAll("[data-contact-close]");
     const form = document.querySelector("[data-contact-form]");
+    const status = document.querySelector("[data-form-status]");
     if (!modal || !openButton || !form) return;
 
     let lastFocused = null;
 
+    const setStatus = (message, type) => {
+      if (!status) return;
+      status.textContent = message;
+      status.classList.remove("is-success", "is-error");
+      if (type) status.classList.add(`is-${type}`);
+    };
+
     const openModal = () => {
       lastFocused = document.activeElement;
+      setStatus("", "");
       modal.classList.add("is-open");
       modal.setAttribute("aria-hidden", "false");
       setTimeout(() => modal.querySelector("input")?.focus(), 40);
@@ -403,29 +412,36 @@
       closeModal();
     });
 
-    form.addEventListener("submit", (event) => {
+    const encodeFormData = (formData) => new URLSearchParams(formData).toString();
+
+    form.addEventListener("submit", async (event) => {
       event.preventDefault();
       const formData = new FormData(form);
-      const name = String(formData.get("nome") || "").trim();
-      const phone = String(formData.get("telefone") || "").trim();
-      const email = String(formData.get("email") || "").trim();
-      const message = String(formData.get("mensagem") || "").trim() || "Não informado.";
+      const submitButton = form.querySelector("button[type='submit']");
 
-      const subject = encodeURIComponent(`Contato pelo portfólio - ${name}`);
-      const body = encodeURIComponent([
-        "Novo contato recebido pelo portfólio.",
-        "",
-        `Nome: ${name}`,
-        `Telefone: ${phone}`,
-        `E-mail: ${email}`,
-        "",
-        "Mensagem:",
-        message
-      ].join("\n"));
+      submitButton?.classList.add("is-loading");
+      submitButton?.setAttribute("disabled", "true");
+      setStatus("Enviando mensagem...", "");
 
-      window.location.href = `mailto:ddosantosmkt@gmail.com?subject=${subject}&body=${body}`;
-      form.reset();
-      closeModal();
+      try {
+        const response = await fetch("/", {
+          method: "POST",
+          headers: { "Content-Type": "application/x-www-form-urlencoded" },
+          body: encodeFormData(formData)
+        });
+
+        if (!response.ok) {
+          throw new Error("Falha no envio do formulário.");
+        }
+
+        form.reset();
+        setStatus("Mensagem enviada. Obrigado pelo contato.", "success");
+      } catch (error) {
+        setStatus("Não foi possível enviar agora. Tente novamente em alguns instantes.", "error");
+      } finally {
+        submitButton?.classList.remove("is-loading");
+        submitButton?.removeAttribute("disabled");
+      }
     });
   };
 

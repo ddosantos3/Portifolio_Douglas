@@ -54,3 +54,9 @@
 - Corrigido CSS que deixava `.anim-item` com `opacity: 0` por padrao.
 - Cards renderizados via JavaScript voltaram a ficar visiveis independentemente da animacao.
 - Animacao agora nao pode esconder conteudo essencial caso o container nao tenha fluxo de reveal proprio.
+
+## 2026-05-29 - Formulario Netlify Forms
+- Substituido envio via `mailto:` por envio AJAX para Netlify Forms.
+- Formulario `portfolio-contact` agora possui `data-netlify="true"`, `form-name`, assunto e honeypot.
+- Adicionado feedback visual de envio, sucesso e erro.
+- README documenta configuracao de notificacao no Netlify para `ddosantosmkt@gmail.com`.

@@ -19,3 +19,9 @@
 - Usar Lucide Icons via CDN, com verificacao defensiva em JavaScript.
 - Nao usar porcentagens falsas para habilidades; stack organizada por dominio.
 - Background com grid tecnico, ruido sutil e movimento leve, sem efeito visual gamer.
+
+## 2026-05-29 - Formulario de contato
+- Usar Netlify Forms como backend leve do formulario, mantendo o projeto estatico e sem framework.
+- Submeter o formulario com AJAX para preservar a experiencia do popover no canto inferior direito.
+- Manter `name="email"` no campo de e-mail para permitir Reply-To nas notificacoes da Netlify.
+- Documentar no README a dependencia operacional: configurar notificacao de submissao no painel da Netlify.

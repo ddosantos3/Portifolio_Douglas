@@ -52,11 +52,25 @@ http://localhost:4173
 - Foto principal: `assets/images/Douglas.png`
 - Currículo em PDF: `assets/docs/Curriculo_Douglas_Santos.pdf`
 
+## Formulário de contato
+
+O formulário flutuante usa Netlify Forms. Após o deploy, confira no painel do Netlify se o formulário `portfolio-contact` foi detectado.
+
+Para receber os contatos por e-mail:
+
+1. Acesse o projeto no Netlify.
+2. Confira se a detecção de formulários está ativa em `Forms`.
+3. Vá em `Project configuration > Notifications > Emails and webhooks > Form submission notifications`.
+4. Crie uma notificação de formulário para `ddosantosmkt@gmail.com`.
+
+As submissões também ficam disponíveis no painel do Netlify em `Forms`.
+
 ## Tecnologias usadas
 
 - HTML5 semântico
 - CSS3 com darkmorphism, glassmorphism, grid técnico e motion sutil
 - JavaScript modular em arquivo separado
+- Netlify Forms para captura de contatos
 - GSAP + ScrollTrigger via CDN, com fallback por IntersectionObserver
 - Lenis via CDN para smooth scroll, com fallback nativo
 - Lucide Icons via CDN
