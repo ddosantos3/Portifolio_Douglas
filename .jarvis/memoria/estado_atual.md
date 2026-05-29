@@ -33,3 +33,7 @@
 - Widget flutuante `DS` e formulario foram comentados no `index.html`.
 - Codigo foi preservado para reativacao futura, mas nao aparece no front.
 - Contato do site permanece por links diretos na secao Contato.
+
+## 2026-05-29 - Curriculo atualizado
+- Arquivo `assets/docs/Curriculo_Douglas_Santos.pdf` substituido pela versao atualizada pelo usuario.
+- Botoes de download do portfolio continuam apontando para o mesmo caminho do PDF.

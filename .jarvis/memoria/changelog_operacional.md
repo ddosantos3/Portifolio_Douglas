@@ -66,3 +66,7 @@
 - Comentado o bloco HTML do botao flutuante `DS` e do formulario de contato.
 - Mantidos CSS e JavaScript para reativacao futura sem reconstruir a funcionalidade.
 - README atualizado para indicar que o formulario esta temporariamente inativo.
+
+## 2026-05-29 - Atualizacao do curriculo
+- Atualizado o PDF `assets/docs/Curriculo_Douglas_Santos.pdf`.
+- Conferido que os CTAs de download seguem usando o caminho correto do documento.
