@@ -49,3 +49,8 @@
 - Cards agora usam `grid-auto-rows`, altura consistente e `align-items: stretch`.
 - Conteudo interno dos cards passou a usar flex column para manter tags e rodapes alinhados.
 - Animacao GSAP dos cards foi alterada para ocorrer por grupo com stagger, evitando offsets independentes entre cards da mesma linha.
+
+## 2026-05-29 - Correcao urgente de cards invisiveis
+- Corrigido CSS que deixava `.anim-item` com `opacity: 0` por padrao.
+- Cards renderizados via JavaScript voltaram a ficar visiveis independentemente da animacao.
+- Animacao agora nao pode esconder conteudo essencial caso o container nao tenha fluxo de reveal proprio.

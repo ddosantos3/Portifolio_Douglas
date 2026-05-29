@@ -1304,10 +1304,14 @@ p {
   color: var(--cyan);
 }
 
-[data-animate],
-.anim-item {
+[data-animate] {
   opacity: 0;
   transform: translateY(22px);
+}
+
+.anim-item {
+  opacity: 1;
+  transform: none;
 }
 
 .is-visible {
