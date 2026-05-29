@@ -54,7 +54,19 @@ http://localhost:4173
 
 ## Formulário de contato
 
-O formulário flutuante usa Netlify Forms. Após o deploy, confira no painel do Netlify se o formulário `portfolio-contact` foi detectado.
+O widget flutuante `DS` e o formulário foram preservados no `index.html`, mas estão comentados temporariamente para não aparecerem no front.
+
+Enquanto estiver comentado, o site mantém os contatos por links diretos na seção `Contato`:
+
+- E-mail: `mailto:ddosantosmkt@gmail.com`
+- Telefone: `tel:+5514996925590`
+- LinkedIn
+- GitHub
+- Currículo em PDF
+
+Para reativar o formulário, remova o comentário do bloco "Widget flutuante DS preservado para reativacao futura" no `index.html` e configure um backend de envio.
+
+### Opção Netlify Forms
 
 Envios feitos em `localhost` ou abrindo o `index.html` diretamente não disparam e-mail; o recebimento real depende do deploy processado pela Netlify.
 

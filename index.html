@@ -319,62 +319,67 @@
     </div>
   </footer>
 
-  <button class="floating-contact" type="button" data-contact-open aria-label="Abrir formulário de contato">
-    <span>DS</span>
-  </button>
+  <!--
+    Widget flutuante DS preservado para reativacao futura.
+    Atualmente comentado para nao aparecer no front enquanto o formulario nao tiver backend ativo.
 
-  <div class="contact-modal" data-contact-modal aria-hidden="true">
-    <div class="contact-modal-backdrop" data-contact-close></div>
-    <section class="contact-dialog" role="dialog" aria-modal="true" aria-labelledby="contact-dialog-title">
-      <button class="modal-close" type="button" data-contact-close aria-label="Fechar formulário">
-        <i data-lucide="x" aria-hidden="true"></i>
-      </button>
+    <button class="floating-contact" type="button" data-contact-open aria-label="Abrir formulário de contato">
+      <span>DS</span>
+    </button>
 
-      <div class="modal-heading">
-        <div class="modal-mark">DS</div>
-        <div>
-          <h2 id="contact-dialog-title">Enviar mensagem</h2>
-          <p>Conte sobre a oportunidade e eu retorno por e-mail.</p>
-        </div>
-      </div>
-
-      <form class="lead-form" name="portfolio-contact" method="POST" data-netlify="true" netlify-honeypot="bot-field" data-contact-form>
-        <input type="hidden" name="form-name" value="portfolio-contact" />
-        <input type="hidden" name="subject" value="Novo contato pelo portfólio - Douglas Santos" />
-        <p class="hidden-field" aria-hidden="true">
-          <label>Não preencha este campo <input name="bot-field" tabindex="-1" autocomplete="off" /></label>
-        </p>
-
-        <div class="form-row">
-          <label for="lead-name">
-            Nome
-            <input id="lead-name" name="nome" type="text" placeholder="Seu nome" autocomplete="name" required />
-          </label>
-
-          <label for="lead-phone">
-            Telefone
-            <input id="lead-phone" name="telefone" type="tel" placeholder="(00) 00000-0000" autocomplete="tel" required />
-          </label>
-        </div>
-
-        <label for="lead-email">
-          E-mail
-          <input id="lead-email" name="email" type="email" placeholder="voce@empresa.com" autocomplete="email" required />
-        </label>
-
-        <label for="lead-message">
-          Mensagem
-          <textarea id="lead-message" name="mensagem" rows="5" placeholder="Me conte rapidamente sobre a oportunidade ou projeto."></textarea>
-        </label>
-
-        <button class="btn btn-primary modal-submit" type="submit">
-          <i data-lucide="send" aria-hidden="true"></i>
-          Enviar por e-mail
+    <div class="contact-modal" data-contact-modal aria-hidden="true">
+      <div class="contact-modal-backdrop" data-contact-close></div>
+      <section class="contact-dialog" role="dialog" aria-modal="true" aria-labelledby="contact-dialog-title">
+        <button class="modal-close" type="button" data-contact-close aria-label="Fechar formulário">
+          <i data-lucide="x" aria-hidden="true"></i>
         </button>
-        <p class="form-status" data-form-status aria-live="polite"></p>
-      </form>
-    </section>
-  </div>
+
+        <div class="modal-heading">
+          <div class="modal-mark">DS</div>
+          <div>
+            <h2 id="contact-dialog-title">Enviar mensagem</h2>
+            <p>Conte sobre a oportunidade e eu retorno por e-mail.</p>
+          </div>
+        </div>
+
+        <form class="lead-form" name="portfolio-contact" method="POST" data-netlify="true" netlify-honeypot="bot-field" data-contact-form>
+          <input type="hidden" name="form-name" value="portfolio-contact" />
+          <input type="hidden" name="subject" value="Novo contato pelo portfólio - Douglas Santos" />
+          <p class="hidden-field" aria-hidden="true">
+            <label>Não preencha este campo <input name="bot-field" tabindex="-1" autocomplete="off" /></label>
+          </p>
+
+          <div class="form-row">
+            <label for="lead-name">
+              Nome
+              <input id="lead-name" name="nome" type="text" placeholder="Seu nome" autocomplete="name" required />
+            </label>
+
+            <label for="lead-phone">
+              Telefone
+              <input id="lead-phone" name="telefone" type="tel" placeholder="(00) 00000-0000" autocomplete="tel" required />
+            </label>
+          </div>
+
+          <label for="lead-email">
+            E-mail
+            <input id="lead-email" name="email" type="email" placeholder="voce@empresa.com" autocomplete="email" required />
+          </label>
+
+          <label for="lead-message">
+            Mensagem
+            <textarea id="lead-message" name="mensagem" rows="5" placeholder="Me conte rapidamente sobre a oportunidade ou projeto."></textarea>
+          </label>
+
+          <button class="btn btn-primary modal-submit" type="submit">
+            <i data-lucide="send" aria-hidden="true"></i>
+            Enviar por e-mail
+          </button>
+          <p class="form-status" data-form-status aria-live="polite"></p>
+        </form>
+      </section>
+    </div>
+  -->
 
   <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js" defer></script>
   <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js" defer></script>

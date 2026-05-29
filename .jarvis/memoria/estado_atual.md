@@ -28,3 +28,8 @@
 - Envio visual por `mailto:` removido para evitar falsa expectativa de entrega automatica.
 - O site agora envia submissao URL-encoded para a Netlify, com feedback de sucesso/erro no popover.
 - Recebimento por e-mail depende da notificacao de formulario configurada no painel da Netlify para `ddosantosmkt@gmail.com`.
+
+## 2026-05-29 - Widget DS temporariamente inativo
+- Widget flutuante `DS` e formulario foram comentados no `index.html`.
+- Codigo foi preservado para reativacao futura, mas nao aparece no front.
+- Contato do site permanece por links diretos na secao Contato.

@@ -61,3 +61,8 @@
 - Adicionado feedback visual de envio, sucesso e erro.
 - Adicionada protecao para evitar falso sucesso em testes locais fora da Netlify.
 - README documenta configuracao de notificacao no Netlify para `ddosantosmkt@gmail.com`.
+
+## 2026-05-29 - Widget DS comentado
+- Comentado o bloco HTML do botao flutuante `DS` e do formulario de contato.
+- Mantidos CSS e JavaScript para reativacao futura sem reconstruir a funcionalidade.
+- README atualizado para indicar que o formulario esta temporariamente inativo.
