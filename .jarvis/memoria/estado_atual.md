@@ -45,3 +45,7 @@
 ## 2026-05-29 - Certificacoes Alura adicionadas
 - Secao de formacao complementar recebeu tres cursos da Alura em prompt engineering, pensamento computacional e IA generativa.
 - Cards foram adicionados em `src/data/portfolio-data.js`, preservando o layout atual da grade.
+
+## 2026-05-29 - Curriculo atualizado com arquivo renomeado
+- Usuario atualizou o curriculo como `assets/docs/Douglas_Santos.pdf`.
+- Arquivo foi renomeado para `assets/docs/Curriculo_Douglas_Santos.pdf` para preservar os links de download do portfolio.

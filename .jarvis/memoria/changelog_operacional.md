@@ -78,3 +78,7 @@
 ## 2026-05-29 - Inclusao de cursos Alura
 - Adicionados cursos de Engenharia de Prompt, Pensamento Computacional e IA Generativa na secao de certificacoes.
 - Mantida a renderizacao por dados estruturados em `src/data/portfolio-data.js`.
+
+## 2026-05-29 - Atualizacao do PDF do curriculo
+- Substituido o curriculo por nova versao enviada como `Douglas_Santos.pdf`.
+- Mantido o caminho final `assets/docs/Curriculo_Douglas_Santos.pdf` para evitar quebra dos CTAs de download.
