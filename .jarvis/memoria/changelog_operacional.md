@@ -70,3 +70,7 @@
 ## 2026-05-29 - Atualizacao do curriculo
 - Atualizado o PDF `assets/docs/Curriculo_Douglas_Santos.pdf`.
 - Conferido que os CTAs de download seguem usando o caminho correto do documento.
+
+## 2026-05-29 - Nova atualizacao do curriculo
+- Substituido novamente o PDF do curriculo em `assets/docs/Curriculo_Douglas_Santos.pdf`.
+- Validado que o arquivo permanece em PDF e que os links de download nao precisaram mudar.

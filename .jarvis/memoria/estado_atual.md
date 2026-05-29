@@ -37,3 +37,7 @@
 ## 2026-05-29 - Curriculo atualizado
 - Arquivo `assets/docs/Curriculo_Douglas_Santos.pdf` substituido pela versao atualizada pelo usuario.
 - Botoes de download do portfolio continuam apontando para o mesmo caminho do PDF.
+
+## 2026-05-29 - Curriculo atualizado novamente
+- PDF `assets/docs/Curriculo_Douglas_Santos.pdf` substituido por nova versao enviada pelo usuario.
+- Caminho publico do download foi mantido para evitar ajuste nos CTAs.
